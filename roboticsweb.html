@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robotics Workshop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+     
+    body {
+ 
+      background-image: url('bgc5.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+    
+}
+
+    
+     
+    nav{
+            display: flex;
+     
+      background-color:#00ffe7;
+            padding: 34px 50px 0px 2200px ;
+            margin: 0;
+            position:sticky;
+                top: 0px;
+            z-index: 3;
+            height: 100px;
+            width: 100vw;
+
+            font-size: 25px;
+            position: fixed;
+            top: 0px;
+            font-weight: bold;
+
+
+        }
+        #img{
+            width: 10px;
+            border-radius: 10px;
+         }
+         .words{
+            
+            position: absolute;
+            right:50px;
+           
+         }
+        .nav{
+            display: flex;
+        
+            margin: 0px 25px ;
+           
+
+         
+        }
+
+        .nav li{
+            list-style: none;
+            
+            color: white;
+        }
+        img{
+            width:30px;
+            border-radius:15px ;
+            
+        }
+        .img{
+            padding: 0px 10px ;
+        }
+       
+    .start h1 {
+      font-size: 60px;
+      color: #00ffe7;
+    }
+    .start p {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #00ffe7;
+      color: #000;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #00bfa5;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      color: white;
+    }
+    .es li{
+      font-size: 20px;
+    }
+    h2 {
+      color: #00ffe7;
+      margin-bottom: 20px;
+      font-size: 50px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    form {
+      margin-top: 20px;
+    }
+   
+    .main p{
+      font-weight: bold;
+    }
+    .accordian{
+            background-color: #00ffe7;
+            padding:5px 50px ;
+            width: 1000px;
+            
+            margin:15px;
+            
+            
+
+        }
+        .question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 30px;
+            height: 50px;
+            
+        }
+        .answer{
+            max-height: 0px;
+            overflow:hidden;
+            font-size: 20px;
+            
+        }
+
+        .answer.active{
+            max-height: fit-content;
+        }
+
+        footer {
+      background-color: #111;
+      color: #888;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+    .abtwork{
+      font-size: 20px;
+    }
+
+    @media (max-width:2950px) {
+      nav{
+        padding: 34px 50px 0px 1500px ;
+      }
+      
+    }
+    @media (max-width:2493px) {
+      nav{
+        padding: 34px 50px 0px 1200px ;
+      }
+      
+    }
+    @media (max-width:2173px) {
+      nav{
+        padding: 34px 50px 0px 900px ;
+      }
+      
+    }
+    @media (max-width:1749px) {
+      nav{
+        
+        padding: 34px 50px 0px 600px ;
+      }
+      
+      
+    }
+    @media (max-width:1146px){
+      nav{
+        padding: 34px 50px 0px 200px ;
+        width: 100vw;
+      }
+
+      section{
+        max-width: 800px;
+      }
+      .accordian{
+        width:600px
+      }
+    }
+    @media (max-width:750px){
+      nav{
+        padding: 34px 50px 0px 50px ;
+      }
+      section{
+        max-width: 400px;
+      }
+      .accordian{
+        width:350px
+      }
+      h1{
+        font-size: 30px;
+      }
+      .question{
+        height:70px
+      }
+
+    }
+    @media (max-width:612px){
+      .nav{
+      
+        
+            margin: 0px 10px ;
+     
+    }
+    nav{
+      padding: 34px 50px 0px 10px ; 
+      }}
+
+      @media (max-width:486){
+        nav{
+          padding: 34px 0px 0px 0px ;
+          font-size: 10px;
+        }
+        .nav{
+         margin: 0px 2px ;
+
+}
+.accordian{
+  width:150px;
+
+}
+.question{
+  width: 50px;
+}
+img{
+            width:15px;
+            border-radius:7.5px ;
+            
+      }}
+      
+
+
+
+  
+    
+    
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <ul class="nav">
+      <li class="img"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAxAMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAABgcIBQMEAgH/xABEEAABAwIDBQIICA4DAAAAAAAAAQIDBAUGBxEhMUFRYRITFzdSVWJ0kbIUInGUobGz0hUjMjZCU3JzdYGTwfDxM6LT/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/ALxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiWLsw7BhSb4NWyy1FZoirTUrUe9qLxdqqI3+a6gS0EIwvmlhzEVayijdUUNVIukUdY1rUkXk1yKqa9FVFUm4AH8VURFVV0RCs5c7sMskc2Oiu8zEXRsjIY0a9OadqRF0+VEAs0FYeHDDfm28/0of/AFJ1hm/0WJrNDdbb3ncS6p2ZW9lzHIuioqbdqLyVQOqAAAAAAAAAAAAAAAAAAAAAA8qmohpKeSoqpY4YImq+SSRyNaxqb1VV3IURmTmnNeu9tWHJJILaurZalNWyVCck4tZ9K9E2KEizJzWZQLNaMLyNlq01ZNXJorIV4ozg53XcnVd1HyPfLI+WV7pJHuVz3vcqucq71VV3r1PzsanBET6Cystsr6i/91dL82SmtX5UcO1slSn1tZ13rw0TaBWqprvLdy3zXdS9zaMVSufBsbDcHrq5nJJeaelw48z9ZkZTrTNku2E4XOhRO1NbmbVbzWLn+z7ORUAGx5HtkpXPjcjmOjVWuauqKmm9DGsP/Cz9lCfZfZjVuGES3V/eVdnciokeur6fXizXhzb7NOMCjRWxtau9ERAP0aMyM8X9P6zP76mczRmRni/p/WZ/fUCwAAAAAAAAAAAAAAAAAAAOffb1b7BbZLhdalsFPHxXe5eDWpvVV5IczGmMrXhCg7+veslTIi/B6SNfjyr/AGTm5dn89EM44sxRc8V3Jay6S7G6pDTsX8XCnJqc+a719iIHWx/mBcMYTrAiOpLSx2sVKi7X6bnSLxXpuTqu0iDGue9rGNc57lRrWtTVXKu5ETip72231l1roqG200lTVSroyKNNq9eSJ1XYhe2FMG2PLm1rf8TVML7gxu2Z21kKr+hEm9XLu101XhogHJy9yuht0Tb7jJImrG3vY6OVU7EKJt7UqrsVU5bk468OXmPmrNc+9tWGJXQ0C6tlrG6tfP0Z5Leu9eib49mDmFX4vmWniR9JaGu1ZTa/GkVNzpFTevo7k6rtIWBYOXOZdZhh0VuunbqrNroib5Kbqzm30fZyWcY3y/tmNKJMQ4Snp0rJm9vVi/iqv5fJf157F5pQxJcE40ueD65ZKNe+o5Ha1FG92jJOqeS7r7dQOBV0tRRVUtLWQyQVELuzJFImjmLyVDxNC3O04azZsbbhbZkguMTeyk3ZRJYXfq5W8W/7avOjMQWK5YduT7fd6ZYZ27WrvZI3ymO4p/i6LsA5pozIzxf0/rM/vqZzL7yHvdukw3+BEqGtuMEskroHbFcxztUc3mnPTdx3pqFogAAAAAAAAAAAAAAAEDzFzHosKRuoqHu6u8Ob8WHXVkGu50mnu716JtO9jqS8xYTuMmHEVbk2PWPspq7TVO12U4u7OunXQyk6R0z3Sve6R8iq5z3LqrlXaqqq71XmB9V1uVbeK+WvudTJU1Uq6vkf9CIm5ETgibD7sLYZueKrklDaotVTRZZn7I4W83L9Sb19p1cA4CuOMKlJG9qltUbtJqtyb+bY0/Sd13Jx5LZ+JsW2HLS0pYcNU8MlxamvdIuqRuVPy5nb1cu/TeuzcmgH0MZhfKCxdp7lqbnUN36J39U5OCeQxPYnVV20rizFN0xZcfhl0l+K3XuKdi/i4U5InPmq7V+TRE590uVbd6+WvudTJU1Uq6vkev0Im5ETgibEPkAAAAAAOjYb3ccP3KO4WmodBUM2LxbI3yXJxT/E0XaXlab3hvNiyLa7rClPco29pYe1pJG79ZC7in+nJpvz4etNUTUlRFU0s0kM8TkdHLG5WuYvNFQCQ43wVc8H1qR1ad9RSO0p6xjdGv6L5Luns1I9TVE9JUxVNJNJBURO7UcsbtHMXmil24IzEtuLaJcO4zip1qZ292kkjUSKq5J6L/rXdouwhuY2WtZhd8lwtiPqrMq6q7fJTdH82+l7eahPcts0ob33VqxC+Onui/Fin/Jjqenov6bl4cks8xmqIqaKmqGlsoKi91WDIJr898iuevwSSXbI+DROyrl47ddFXaqaKBNgAAAAAAAAAAAAAr685SWG7YkW7SSTQwyu7dRRw6NZK/iuu9uvHTf0LBAEbxnI6w4Duj7MjaNaSid8H7lqIkWibNE3IZZe5z3ufI5z3vVXOc5dVcq71VeKmo8zfF/fvU3mWgAAAA9KeGWpqIqenYsk0z2xxsTe5zl0RP5qqEo8GmNPME39eH74ETBLPBpjTzBN/Xh++R25W+rtVfNQXGB1PVwKiSROVFVqqiKm1FVNyooHygAAqIqaKmqGlMnq+quuAqaS5TvqXtklh7Uq9pVY1yoiKvHZs2mazRmRni/p/WZ/fUDzmyfw7JiJlyZ3kdH2u2+3Iid053JOKN9Hdw2JsLDREaiI1ERE2IicD+gAAAAAAAAAAAAAAAACMZm+L+/epvMtGpczfF/fvU3mWgAAA6eF/wA6LL/Eab7VprkyNhf86LL/ABGm+1aa5AGYM2PGNfP3kX2MZp8zBmx4xr5+8i+xjAiQAAGjMjPF/T+sz++pnM0ZkZ4v6f1mf31AsAAAAAAAAAAAAAAAAAAARrMpjpMA39rGq5fgUi6JyRNVMsGy3NRzVa5EVqpoqLxIXUZU4LnmfKtoVivXVWxVMrGp8jUdoidEAzQDSfgkwV5rl+ezffHgkwV5rl+ezffAz/hf86LL/Eab7VprkhlHlbg+irIKuntsjZqeRssarVzKiOauqLortF2oTMAZgzY8Y18/eRfYxmnyJ3rLnC17uc9yuVvkkq51RZHtqZWdrREamxHIm5EAy+DSfgkwV5rl+ezffHgkwV5rl+ezffAzYaNyOY5uXtKrmqiPqJ1brxTvFT+ynu3KXBTXIv4KkXRddFrJlRf+5M6Wmgo6aKmpIWQwRNRkccbdGtam5EQD1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH/9k=" alt=""></li>
+<li class="word"> Home </li>
+</ul>
+
+<ul class="nav">
+<li class="img"><img src="data:image/png;base64,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" alt=""></li>
+<li class="word">About</li>
+</ul>
+
+<ul class="nav">
+<li class="img"><img src="https://static.vecteezy.com/system/resources/previews/039/304/779/non_2x/registration-concept-line-icon-simple-element-illustration-registration-concept-outline-symbol-design-vector.jpg" alt=""></li>
+<li class="word">Register
+</li>
+</ul>
+
+
+  </nav>
+</header>
+  <section class="main">
+  <section class="start">
+    <h1>AUTOMAX 4.0</h1>
+    <p>Join our 2-day hands-on Microcontollers  workshop</p>
+    <a href="#register" class="btn">Register Now</a>
+  </section>
+
+  <section>
+    <h2>About the Workshop</h2>
+    <p class="abtwork">AUTOMAX 4.0 is an interactive workshop conducted by Robotics Club MANIT .In it , you will learn about practical applications like Autocad,Fusion 360 and Arduino programming and create projects .</p>
+  </section>
+
+  <section>
+    <h2>Event Schedule</h2>
+    <ul class="es">
+      <li><strong>Day 1:</strong> Introduction to Arduino, sensors, and basic coding</li>
+      <li><strong>Day 2:</strong> Building and deploying a mini project using Arduino</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Mentors</h2>
+    <p class="abtwork">Learn from experienced members of the Robotics Society who have worked on national-level robotics competitions and projects.</p>
+  </section>
+
+  <section id="register">
+    <h2>Register Now</h2>
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" placeholder="Phone Number" required>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Branch " required>
+      </div>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
+
+  <section class="faq">
+    <h2>FAQ'S</h2>
+
+    <div class="accordian">
+        <div class="question">
+            <h5>What is AUTOMAX4.0?</h5>
+            
+        </div>
+        <div class=" answer">
+            <p>It is an interactive workshop conducted by Robotics Club MANIT.In it, you will learn about practical applications like Autocad, Fusion 360 , and Arduino programming and create projects .</p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+            <h5>Why take part in AUTOMAX4.0?</h5>
+            
+    
+        </div>
+        <div class="answer">
+            <p>There are many perks for attending the workshop , which includes:
+              <ul class="faqlist">
+                <li>
+                  You can win prizes worth rupees 35k
+                </li>
+                <li>
+                  You will be provided with a certificate of participation 
+                </li>
+                <li>
+                  You will learn hands-on by working on projects and getting exposure to AI
+                </li>
+              </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+            <h5>Is the workshop for paid ?</h5>
+           
+    
+        </div>
+        <div class="answer">
+            <p>Yes , the cost of availing the workshop is 199/-(For non-MANIT students )</p>
+        </div>
+    </div>
+
+
+    <div class="accordian">
+        <div class="question">
+            <h5>What is the timming and venue of workshop</h5>
+            
+    
+        </div>
+        <div class="answer">
+            <p>The workshop will be conducted at the Student Activity Centre(SAC),MANIT from 10:00A.M. to 2:00P.M.</p>
+        </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+            <h5>Is the workshop interactive ?</h5>
+            
+    
+        </div>
+        <div class="answer">
+            <p>The workshop will be interactive with live examples and quizzes</p>
+        </div>
+    </div>
+  
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Facebook: @roboticsclubmanit</p>
+    <p>Instagram: @roboticsclubmanit</p>
+    <p>LinkedIn: @roboticsclubmanit</p>
+  </section>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Robotics Society, MANIT | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    const accordian= document.querySelectorAll(".accordian");
+
+accordian.forEach(accordian => {
+    const answer = accordian.querySelector(".answer")
+
+    accordian.addEventListener("click",()=>{
+        answer.classList.toggle("active");
+     })
+    })
+
+  </script>
+</body>
+</html>
